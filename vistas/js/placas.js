@@ -5,8 +5,8 @@ EDITAR PLACAS
 $(document).on("click", ".btnEditarPlaca", function(){
 
 	var idPlaca = $(this).attr("idPlaca");
-	 console.log("idPlaca", idPlaca);
-	
+	 //console.log("idPlaca", idPlaca);
+
 	var datos = new FormData();
 	datos.append("idPlaca", idPlaca);
 
@@ -36,7 +36,7 @@ ELIMINAR PLACAS
 =============================================*/
 $(document).on("click", ".btnEliminarPulgada", function(){
 
-  var idPulgada = $(this).attr("idPulgada");
+  var idPlaca = $(this).attr("idPlaca");
   //console.log("idMaquina", idMaquina);
   var CostoPulgada = $(this).attr("CostoPulgada");
 
@@ -53,7 +53,7 @@ $(document).on("click", ".btnEliminarPulgada", function(){
 
     if(result.value){
 
-      window.location = "index.php?ruta=placas&idPulgada="+idPulgada+"&placa="+placa;
+      window.location = "index.php?ruta=placas&idPlaca="+idPlaca+"&CostoPulgada="+CostoPulgada;
 
     }
 

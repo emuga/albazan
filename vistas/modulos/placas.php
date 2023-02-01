@@ -42,7 +42,7 @@
            
            <th style="width:10px">#</th>
            <th>Placa</th>
-           <th>Acciones</th>
+           <!-- <th>Acciones</th> -->
 
          </tr> 
 
@@ -65,17 +65,17 @@
 						<td>'.($key+1).'</td>
 						<td>'.$value["CostoPulgada"].'</td>
 						
-						<td>
+						<!--<td>
 
 						  <div class="btn-group">
 							  
 							<button class="btn btn-warning btnEditarPlaca" idPlaca="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarPlaca"><i class="fa fa-pencil"></i></button>
 
-							<button class="btn btn-danger btnEliminarPulgada" idPulgada="'.$value["id"].'" pulgada="'.$value["CostoPulgada"].'"><i class="fa fa-times"></i></button>
+							<button class="btn btn-danger btnEliminarPulgada" idPlaca="'.$value["id"].'" placa="'.$value["CostoPulgada"].'"><i class="fa fa-times"></i></button>
 
 						  </div>  
 
-						</td>
+						</td>-->
 
 					</tr>';
 				
