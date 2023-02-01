@@ -15,8 +15,6 @@ require_once "controladores/placas.controlador.php";
 require_once "controladores/negativos.controlador.php";
 require_once "controladores/rebobinados.controlador.php";
 
-require_once "controladores/rebobinados.prueba.php";
-
 require_once "modelos/usuarios.modelo.php";
 require_once "modelos/papeles.modelo.php";
 require_once "modelos/maquinas.modelo.php";
