@@ -33,8 +33,6 @@
     <!-- Begin page content -->
     <div class="container">
 
-      <h3 class="mt-5">Carga de datos con Select PHP & MySQL</h3><hr>
-
       <div class="row">
 
         <div class="col-12 col-md-10"> 
@@ -43,8 +41,6 @@
           <div class="container">
 
             <div class="page-header">
-
-              <h3>
 
                 <select id="etiqueta">
 
@@ -65,8 +61,6 @@
                   <?php }	?>
 
                 </select>
-
-              </h3>	
 
             </div><br>
 
@@ -144,21 +138,6 @@
       <!-- Fin row --> 
 
     </div>
-
-    <!-- Fin container -->
-    <footer class="footer">
-
-      <div class="container"> 
-
-        <span class="text-muted">
-
-          <p>Códigos <a href="" target="_blank">BaulPHP</a></p>
-
-        </span> 
-
-      </div>
-
-    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== --> 
