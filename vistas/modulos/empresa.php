@@ -114,10 +114,10 @@
 </div>
 
 <!--=====================================
-MODAL AGREGAR CLIENTE
+MODAL AGREGAR EMPRESA
 ======================================-->
 
-<div id="modalAgregarCliente" class="modal fade" role="dialog">
+<div id="modalAgregarEmpresa" class="modal fade" role="dialog">
   
   <div class="modal-dialog">
 
@@ -133,7 +133,7 @@ MODAL AGREGAR CLIENTE
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar cliente</h4>
+          <h4 class="modal-title">Agregar Empresa</h4>
 
         </div>
 
@@ -146,7 +146,6 @@ MODAL AGREGAR CLIENTE
           <div class="box-body">
 
             <!-- ENTRADA PARA EL NOMBRE EMPRESA-->
-            
             <div class="form-group">
 
                 <label for="">Nombre de la empresa</label>
@@ -155,17 +154,31 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoNombreEmpresa" name="nuevoNombreEmpresa" placeholder="Ingresar nombre empresa" required>
+                <input type="text" class="form-control input-lg" id="nuevaEmpresa" name="nuevaEmpresa" placeholder="Ingresar nombre empresa" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA RFC -->
-
+            <!-- ENTRADA PARA RAZON SOCIAL -->
             <div class="form-group">
 
-                <label for="">RFC de la empresa</label>
+                <label for="">Raz&oacute;n Social</label>
+
+                <div class="input-group">
+
+                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+
+                    <input type="text" class="form-control input-lg" id="nuevaRS" name="nuevaRS" placeholder="Ingresar Raz&oacute;n Social">
+
+                </div>
+
+            </div>
+
+            <!-- ENTRADA PARA RFC -->
+            <div class="form-group">
+
+                <label for="">RFC</label>
               
               <div class="input-group">
               
@@ -177,81 +190,32 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
-            <!-- ENTRADA PARA NOMBRE -->
+            <!-- ENTRADA PARA REGIMEN FISCAL -->
+            <div class="form-group">
 
-             <div class="form-group">
-
-                <label for="">Nombres</label>
+                <label for="">Regimen Fiscal</label>
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoNombre" name="nuevoNombre" placeholder="Ingresar nombre" required>
+                <input type="text" class="form-control input-lg" id="nuevaRF" name="nuevaRF" placeholder="Ingresar Regimen Fiscal" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA APELLIDO -->
-
-             <div class="form-group">
-
-                <label for="">Apellidos</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="nuevoApellido" name="nuevoApellido" placeholder="Ingresar apellido" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL EMAIL -->
+            <!-- ENTRADA DOMICILIO -->
             
             <div class="form-group">
 
-                <label for="">Correo electrónico</label>
+                <label for="">Domicilio</label>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="email" class="form-control input-lg" id="nuevoCorreo" name="nuevoCorreo" placeholder="Ingresar correo" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL TELEFONO -->
-            
-            <div class="form-group">
-
-                <label for="">Teléfono</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="nuevoTelefono" name="nuevoTelefono" placeholder="Ingresar tel&eacute;fono" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL CALLE -->
-            
-            <div class="form-group">
-
-                <label for="">Calle</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="nuevoCalle" name="nuevoCalle" placeholder="Ingresar calle" required>
+                <input type="text" class="form-control input-lg" id="nuevoDomicilio" name="nuevoDomicilio" placeholder="Ingresar Domicilio" required>
 
               </div>
 
@@ -266,14 +230,13 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoColonia" name="nuevoColonia" placeholder="Ingresar colonia" required>
+                <input type="text" class="form-control input-lg" id="nuevaColonia" name="nuevaColonia" placeholder="Ingresar colonia" required>
 
               </div>
 
             </div>
 
             <!-- ENTRADA PARA CODIGO POSTAL -->
-            
             <div class="form-group">
 
                 <label for="">Código Postal</label>
@@ -282,14 +245,13 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="number" class="form-control input-lg" id="nuevoCodigoPostal" name="nuevoCodigoPostal" placeholder="Ingresar c&oacute;digo postal" required>
+                <input type="number" class="form-control input-lg" id="nuevoCP" name="nuevoCP" placeholder="Ingresar c&oacute;digo postal" required>
 
               </div>
 
             </div>
 
               <!-- ENTRADA PARA CIUDAD -->
-            
             <div class="form-group">
 
                 <label for="">Ciudad</label>
@@ -298,14 +260,13 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoCiudad" name="nuevoCiudad" placeholder="Ingresar ciudad" required>
+                <input type="text" class="form-control input-lg" id="nuevaCiudad" name="nuevaCiudad" placeholder="Ingresar ciudad" required>
 
               </div>
 
             </div>
 
               <!-- ENTRADA PARA ESTADO -->
-            
             <div class="form-group">
 
                 <label for="">Estado</label>
@@ -348,14 +309,14 @@ MODAL AGREGAR CLIENTE
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar clientes</button>
+          <button type="submit" class="btn btn-primary">Guardar empresa</button>
 
         </div>
 
         <?php
 
-        $agregarCliente = new ControladorClientes();
-        $agregarCliente -> ctrAgregarCliente();
+        $agregarEmpresa = new ControladorEmpresas();
+        $agregarEmpresa -> ctrAgregarEmpresa();
 
         ?>
 
