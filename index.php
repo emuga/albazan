@@ -14,6 +14,7 @@ require_once "controladores/laminados.controlador.php";
 require_once "controladores/placas.controlador.php";
 require_once "controladores/negativos.controlador.php";
 require_once "controladores/rebobinados.controlador.php";
+require_once "controladores/empresas.controlador.php";
 
 require_once "modelos/usuarios.modelo.php";
 require_once "modelos/papeles.modelo.php";
@@ -28,6 +29,7 @@ require_once "modelos/laminados.modelo.php";
 require_once "modelos/placas.modelo.php";
 require_once "modelos/negativos.modelo.php";
 require_once "modelos/rebobinados.modelo.php";
+require_once "modelos/empresas.modelo.php";
 
 $plantilla = new ControladorPlantilla();
 $plantilla -> ctrPlantilla();

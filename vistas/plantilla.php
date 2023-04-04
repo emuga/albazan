@@ -110,7 +110,7 @@ CUERPO DOCUMENTO
       if($_GET["ruta"] == "inicio" ||
          $_GET["ruta"] == "usuarios" ||
          $_GET["ruta"] == "papeles" ||
-		 $_GET["ruta"] == "maquina" ||
+		     $_GET["ruta"] == "maquina" ||
          $_GET["ruta"] == "productos" ||
          $_GET["ruta"] == "clientes" ||
          $_GET["ruta"] == "ventas" ||
@@ -125,6 +125,7 @@ CUERPO DOCUMENTO
          $_GET["ruta"] == "reportes" ||
          $_GET["ruta"] == "crear-cotizacion" ||
          $_GET["ruta"] == "tintas" ||
+         $_GET["ruta"] == "empresa" ||
          $_GET["ruta"] == "salir"){
 
         include "modulos/".$_GET["ruta"].".php";

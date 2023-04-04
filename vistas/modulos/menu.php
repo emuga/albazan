@@ -192,6 +192,17 @@
 
 			</li>
 
+			<li>
+
+				<a href="empresa">
+
+					<i class="fa fa-users"></i>
+					<span>Empresa</span>
+
+				</a>
+
+			</li>
+
 			<!--<li class="treeview">
 
 				<a href="#">
