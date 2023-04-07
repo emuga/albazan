@@ -154,7 +154,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevaEmpresa" name="nuevaEmpresa" placeholder="Ingresar nombre empresa" required>
+                <input type="text" class="form-control input-lg" id="editarEmpresa" name="editarEmpresa" placeholder="Ingresar nombre empresa" required>
 
               </div>
 
@@ -169,7 +169,7 @@ MODAL AGREGAR EMPRESA
 
                     <span class="input-group-addon"><i class="fa fa-key"></i></span>
 
-                    <input type="text" class="form-control input-lg" id="nuevaRS" name="nuevaRS" placeholder="Ingresar Raz&oacute;n Social">
+                    <input type="text" class="form-control input-lg" id="editarRS" name="editarRS" placeholder="Ingresar Raz&oacute;n Social">
 
                 </div>
 
@@ -184,7 +184,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoRfc" name="nuevoRfc" placeholder="Ingresar RFC" required>
+                <input type="text" class="form-control input-lg" id="editarRfc" name="editarRfc" placeholder="Ingresar RFC" required>
 
               </div>
 
@@ -199,7 +199,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevaRF" name="nuevaRF" placeholder="Ingresar Regimen Fiscal" required>
+                <input type="text" class="form-control input-lg" id="editarRF" name="editarRF" placeholder="Ingresar Regimen Fiscal" required>
 
               </div>
 
@@ -215,7 +215,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoDomicilio" name="nuevoDomicilio" placeholder="Ingresar Domicilio" required>
+                <input type="text" class="form-control input-lg" id="editarDomicilio" name="editarDomicilio" placeholder="Ingresar Domicilio" required>
 
               </div>
 
@@ -230,7 +230,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevaColonia" name="nuevaColonia" placeholder="Ingresar colonia" required>
+                <input type="text" class="form-control input-lg" id="editarColonia" name="editarColonia" placeholder="Ingresar colonia" required>
 
               </div>
 
@@ -245,7 +245,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="number" class="form-control input-lg" id="nuevoCP" name="nuevoCP" placeholder="Ingresar c&oacute;digo postal" required>
+                <input type="number" class="form-control input-lg" id="editarCP" name="editarCP" placeholder="Ingresar c&oacute;digo postal" required>
 
               </div>
 
@@ -260,7 +260,7 @@ MODAL AGREGAR EMPRESA
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevaCiudad" name="nuevaCiudad" placeholder="Ingresar ciudad" required>
+                <input type="text" class="form-control input-lg" id="editarCiudad" name="editarCiudad" placeholder="Ingresar ciudad" required>
 
               </div>
 
@@ -273,9 +273,9 @@ MODAL AGREGAR EMPRESA
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-city"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoEstado" name="nuevoEstado" placeholder="Ingresar estado" required>
+                <input type="text" class="form-control input-lg" id="editarEstado" name="editarEstado" placeholder="Ingresar estado" required>
 
               </div>
 
@@ -289,9 +289,9 @@ MODAL AGREGAR EMPRESA
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-regular fa-flag fa-beat"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoPais" name="nuevoPais" placeholder="Ingresar pa&iacute;s" required>
+                <input type="text" class="form-control input-lg" id="editarPais" name="editarPais" placeholder="Ingresar pa&iacute;s" required>
 
               </div>
 
@@ -329,10 +329,10 @@ MODAL AGREGAR EMPRESA
 </div>
 
 <!--=====================================
-MODAL EDITAR CLIENTE
+MODAL EDITAR EMPRESA
 ======================================-->
 
-<div id="modalEditarCliente" class="modal fade" role="dialog">
+<div id="modalEditarEmpresa" class="modal fade" role="dialog">
   
   <div class="modal-dialog">
 
@@ -348,7 +348,7 @@ MODAL EDITAR CLIENTE
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar cliente</h4>
+          <h4 class="modal-title">Editar Empresa</h4>
 
         </div>
 
@@ -360,8 +360,7 @@ MODAL EDITAR CLIENTE
 
           <div class="box-body">
 
-            <!-- ENTRADA PARA EL NOMBRE EMPRESA-->
-            
+            <!-- EDITAR NOMBRE EMPRESA-->
             <div class="form-group">
 
                 <label for="">Nombre de la empresa</label>
@@ -370,105 +369,68 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarEmpresa" name="editarEmpresa" required>
-
-                <input type="hidden" name="idCliente" id="idCliente" value="">
+                <input type="text" class="form-control input-lg" id="editarEmpresa" name="editarEmpresa" value="" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA RFC -->
-
+            <!-- ENTRADA PARA RAZON SOCIAL -->
             <div class="form-group">
 
-                <label for="">RFC de la empresa</label>
+                <label for="">Raz&oacute;n Social</label>
+
+                <div class="input-group">
+
+                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+
+                    <input type="text" class="form-control input-lg" id="editarRS" name="editarRS" value="">
+
+                </div>
+
+            </div>
+
+            <!-- ENTRADA PARA RFC -->
+            <div class="form-group">
+
+                <label for="">RFC</label>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarRfc" name="editarRfc" required>
+                <input type="text" class="form-control input-lg" id="editarRfc" name="editarRfc" value="" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA NOMBRE -->
+            <!-- ENTRADA PARA REGIMEN FISCAL -->
+            <div class="form-group">
 
-             <div class="form-group">
-
-                <label for="">Nombres</label>
+                <label for="">Regimen Fiscal</label>
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarNombre" name="editarNombre" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA APELLIDO -->
-
-             <div class="form-group">
-
-                <label for="">Apellidos</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="editarApellido" name="editarApellido" required>
+                <input type="text" class="form-control input-lg" id="editarRF" name="editarRF" value="" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA EL EMAIL -->
+            <!-- ENTRADA DOMICILIO -->
             
             <div class="form-group">
 
-                <label for="">Correo electrónico</label>
+                <label for="">Domicilio</label>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="email" class="form-control input-lg" id="editarCorreo" name="editarCorreo" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL TELEFONO -->
-            
-            <div class="form-group">
-
-                <label for="">Teléfono</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="editarTelefono" name="editarTelefono" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL CALLE -->
-            
-            <div class="form-group">
-
-                <label for="">Calle</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="editarCalle" name="editarCalle" required>
+                <input type="text" class="form-control input-lg" id="editarDomicilio" name="editarDomicilio" value="" required>
 
               </div>
 
@@ -483,14 +445,13 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarColonia" name="editarColonia" required>
+                <input type="text" class="form-control input-lg" id="editarColonia" name="editarColonia" value="" required>
 
               </div>
 
             </div>
 
             <!-- ENTRADA PARA CODIGO POSTAL -->
-            
             <div class="form-group">
 
                 <label for="">Código Postal</label>
@@ -499,14 +460,13 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="number" class="form-control input-lg" id="editarCp" name="editarCp" required>
+                <input type="number" class="form-control input-lg" id="editarCP" name="editarCP" value="" required>
 
               </div>
 
             </div>
 
               <!-- ENTRADA PARA CIUDAD -->
-            
             <div class="form-group">
 
                 <label for="">Ciudad</label>
@@ -515,23 +475,22 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarCiudad" name="editarCiudad" required>
+                <input type="text" class="form-control input-lg" id="editarCiudad" name="editarCiudad" value="" required>
 
               </div>
 
             </div>
 
               <!-- ENTRADA PARA ESTADO -->
-            
             <div class="form-group">
 
                 <label for="">Estado</label>
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-city"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarEstado" name="editarEstado"  required>
+                <input type="text" class="form-control input-lg" id="editarEstado" name="editarEstado" value="" required>
 
               </div>
 
@@ -545,9 +504,9 @@ MODAL EDITAR CLIENTE
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-regular fa-flag fa-beat"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarPais" name="editarPais" required>
+                <input type="text" class="form-control input-lg" id="editarPais" name="editarPais" value="" required>
 
               </div>
 
@@ -565,14 +524,14 @@ MODAL EDITAR CLIENTE
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Editar clientes</button>
+          <button type="submit" class="btn btn-primary">Editar empresa</button>
 
         </div>
 
         <?php
 
-        $editarCliente = new ControladorClientes();
-        $editarCliente -> ctrEditarCliente();
+        $editarEmpresa = new ControladorEmpresas();
+        $editarEmpresa -> ctrEditarEmpresa();
 
         ?>
 
@@ -583,6 +542,8 @@ MODAL EDITAR CLIENTE
   </div>
 
 </div>
+
+
 
 <?php
 

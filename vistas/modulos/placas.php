@@ -24,11 +24,11 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarPlaca">
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarPlaca">
           
           Agregar Placa
 
-        </button>
+        </button> -->
 
       </div>
 

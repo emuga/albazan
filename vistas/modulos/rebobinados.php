@@ -24,11 +24,11 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarRebobinado">
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarRebobinado">
           
           Agregar Rebobinado
 
-        </button>
+        </button> -->
 
       </div>
 

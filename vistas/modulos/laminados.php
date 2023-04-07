@@ -24,11 +24,11 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarLaminado">
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarLaminado">
           
           Agregar Laminado
 
-        </button>
+        </button> -->
 
       </div>
 
