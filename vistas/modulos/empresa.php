@@ -24,11 +24,11 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarEmpresa">
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarEmpresa">
           
           Agregar datos de la empresa
 
-        </button>
+        </button> -->
 
       </div>
 
