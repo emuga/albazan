@@ -322,9 +322,6 @@ function operar() {
           
         } 
         
-        
-  
-      
       function CostosFinales(){
           
       var TipoCambio = Number(document.getElementById("TipoCambio").value);

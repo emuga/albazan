@@ -293,23 +293,27 @@
           <label> Costo tinta pesos</label> 
         <input type="text" id="CostoTintaPesos" style="width:75px;"readonly/>
         <br>
-                  <label> Costo placa pesos</label> 
+
+        <label> Costo placa pesos</label> 
         <input type="text" id="CostoPlacaPesos" style="width:75px;"readonly/>
         <br>
-                  <label> Costo negativo pesos</label> 
+
+        <label> Costo negativo pesos</label> 
         <input type="text" id="CostoNegativoPesos" style="width:75px;"readonly/>
         <br>
-                  <label> Costo rebobinado pesos</label> 
+
+        <label> Costo rebobinado pesos</label> 
         <input type="text" id="CostoRebobinadoPesos" style="width:75px;"readonly/>
         <br>
-                  <label> Costo laminado pesos</label> 
+
+        <label> Costo laminado pesos</label> 
         <input type="text" id="CostoLaminadoPesos" style="width:75px;"readonly/>
         <br>
         
         <label> Costo Total Pesos</label> 
         <input type="text" id="CostoTotalPesos" style="width:75px;"readonly/>
         <br>
-                  <label>  Total P. Publico</label> 
+        <label>  Total P. Publico</label> 
         <input type="text" id="TotalPrecioPublico" class="widthset"style="width:75px;"readonly/>
         <br>
         </div>
