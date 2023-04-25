@@ -21,9 +21,9 @@
             
         <div class="form-group">
             
-        <label> Cantidad</label> <input type="text" id="cant" />
-        <label> Num. de Tintas</label> <input type="text" id="NumTintas" />
-        <p></p>
+          <label> Cantidad</label> <input type="text" id="cant" />
+          <label> Num. de Tintas</label> <input type="text" id="NumTintas" />
+          <p></p>
 
           <label>Tamaño de etiqueta</label><br>
                 
@@ -171,80 +171,79 @@
 
       </div>
 
-
-        <div class="box-body" style="display:">
+      <div class="box-body" style="display:">
                 
-          CALCULADO<br>
+        CALCULADO<br>
     
-          <label class="camu">B(x)"bx"</label> 
-          <input type="text" id="bx"  readonly style="width:75px;">
+        <label class="camu">B(x)"bx"</label> 
+        <input type="text" id="bx"  readonly style="width:75px;">
                 
-          <label class="camu">A(y)"ay"</label> 
-          <input type="text" id="ay" readonly style="width:75px;">
+        <label class="camu">A(y)"ay"</label> 
+        <input type="text" id="ay" readonly style="width:75px;">
                 
-          <label class="camu"> Setup</label> 
-          <input type="text" id="setup" readonly style="width:75px;"/>
+        <label class="camu"> Setup</label> 
+        <input type="text" id="setup" readonly style="width:75px;"/>
                 
-          <label class="camu"> MSI</label> 
-          <input type="text" id="msi" readonly style="width:75px;"/>
+        <label class="camu"> MSI</label> 
+        <input type="text" id="msi" readonly style="width:75px;"/>
                 
+      </div>
+                  
+      <div class="row" id="tinta-row" style="display: none">        
+
+        <label> Tipo de tinta</label><br />
+    
+        <div class="item row-item">
+
+          X(tipoTinta)
+          <select name="tipoTinta" id="select-tipoTinta" class="select-tipoTinta">
+            <option value="0">Select</option>
+            <option value="0.02318">CMYK</option>
+            <option value="0.03416">Pantone</option>
+            <option value="0.3087">Fluorescente</option>
+          </select>
+        
+          <label>(cantidad)</label>
+          <input type="text" id="cantidad" style="width:75px;"/>
+                
+          Densidad
+          <select id="select-densidad" class="select-densidad">
+            <option value="0">Select</option>
+            <option value="1">Baja</option>
+            <option value="2">Media</option>
+            <option value="3">Alta</option>
+          </select>
+        
+          tinta
+          <input type="text" id="valor_select1" readonly/>
+        
+          densidad
+          <input type="text" min="1" max="3" readonly id="valor_select2" style="width:75px;"/><br><br>
+        
+          Dens valor
+          <input type="text" id="DensValor" readonly style="width:75px;"/>
+        
+          Valor tinta
+          <input type="text" id="ValorTinta" readonly style="width:75px;"/>
+        
+          Costo Tinta 
+          <input type="text" id="CostoTinta" readonly style="width:75px;"/>
+
         </div>
-            
 
-            
-        <div class="row" id="tinta-row" style="display: none">        
-            <label> Tipo de tinta</label><br />
+      </div>
     
-              <div class="item row-item">
-                X(tipoTinta)
-                <select name="tipoTinta" id="select-tipoTinta" class="select-tipoTinta">
-                  <option value="0">Select</option>
-                  <option value="0.02318">CMYK</option>
-                  <option value="0.03416">Pantone</option>
-                  <option value="0.3087">Fluorescente</option>
-                </select>
-        
-                <label>(cantidad)</label>
-                <input type="text" id="cantidad" style="width:75px;"/>
-                
-                Densidad
-                <select id="select-densidad" class="select-densidad">
-                  <option value="0">Select</option>
-                  <option value="1">Baja</option>
-                  <option value="2">Media</option>
-                  <option value="3">Alta</option>
-                </select>
-        
-                tinta
-                <input type="text" id="valor_select1" readonly/>
-        
-                densidad
-                <input type="text" min="1" max="3" readonly id="valor_select2" style="width:75px;"/><br><br>
-        
-                Dens valor
-                <input type="text" id="DensValor" readonly style="width:75px;"/>
-        
-                Valor tinta
-                <input type="text" id="ValorTinta" readonly style="width:75px;"/>
-        
-                Costo Tinta 
-                <input type="text" id="CostoTinta" readonly style="width:75px;"/>
-              </div>
-            </div>
-            
-            
-            
-        <div id="content"></div>
-        <input type="hidden" id="rows-counter" value="0" />
+      <input type="hidden" id="rows-counter" value="0" />
     
-        <button style="float: right" id="add-row-btn">Agregar Tinta</button>
+      <button style="float: right" id="add-row-btn">Agregar Tinta</button>
         
-        <br />
+      <br />
     
-        <p>Suma cantidad: <span id="sum-cantidad"></span></p>
-        <p>Costo Total Tintas: <span id="sum-CostoTinta"></span></p>
-        
-        
+      <p>Suma cantidad: <span id="sum-cantidad"></span></p>
+      <p>Costo Total Tintas: <span id="sum-CostoTinta"></span></p>
+             
+      <div style="display:none">
+
         <p><label> PLACA: Costo por pulgada (0.5368)</label>
         <label> B</label> 
         <input type="text" id="B" onclick="operar()" readonly/>
@@ -267,10 +266,10 @@
             
         <label> REBOBINADO: Core</label>
         <select name="tipoCore" id="select-tipoCore" onchange="Rebobinado();">
-            <option value="0">Select</option>
-            <option value="0.03782">3"</option>
-            <option value="0.1037">1.5"</option>
-            <option value="0.1037">1"</option>
+          <option value="0">Select</option>
+          <option value="0.03782">3"</option>
+          <option value="0.1037">1.5"</option>
+          <option value="0.1037">1"</option>
         </select>
         
         Costo Core
@@ -286,36 +285,43 @@
         
         <label> Costo Total Laminado</label> 
         <input type="text" id="LaminadoTotal"  readonly/></p>
-   
-            
-  </section>
-  <div  align="right">
+
+        <div  align="right">
+
           <label> Costo tinta pesos</label> 
-        <input type="text" id="CostoTintaPesos" style="width:75px;"readonly/>
-        <br>
+          <input type="text" id="CostoTintaPesos" style="width:75px;"readonly/>
+          <br>
 
-        <label> Costo placa pesos</label> 
-        <input type="text" id="CostoPlacaPesos" style="width:75px;"readonly/>
-        <br>
+          <label> Costo placa pesos</label> 
+          <input type="text" id="CostoPlacaPesos" style="width:75px;"readonly/>
+          <br>
 
-        <label> Costo negativo pesos</label> 
-        <input type="text" id="CostoNegativoPesos" style="width:75px;"readonly/>
-        <br>
+          <label> Costo negativo pesos</label> 
+          <input type="text" id="CostoNegativoPesos" style="width:75px;"readonly/>
+          <br>
 
-        <label> Costo rebobinado pesos</label> 
-        <input type="text" id="CostoRebobinadoPesos" style="width:75px;"readonly/>
-        <br>
+          <label> Costo rebobinado pesos</label> 
+          <input type="text" id="CostoRebobinadoPesos" style="width:75px;"readonly/>
+          <br>
 
-        <label> Costo laminado pesos</label> 
-        <input type="text" id="CostoLaminadoPesos" style="width:75px;"readonly/>
-        <br>
+          <label> Costo laminado pesos</label> 
+          <input type="text" id="CostoLaminadoPesos" style="width:75px;"readonly/>
+          <br>
         
-        <label> Costo Total Pesos</label> 
-        <input type="text" id="CostoTotalPesos" style="width:75px;"readonly/>
-        <br>
-        <label>  Total P. Publico</label> 
-        <input type="text" id="TotalPrecioPublico" class="widthset"style="width:75px;"readonly/>
-        <br>
+          <label> Costo Total Pesos</label> 
+          <input type="text" id="CostoTotalPesos" style="width:75px;"readonly/>
+          <br>
+          <label>  Total P. Publico</label> 
+          <input type="text" id="TotalPrecioPublico" class="widthset"style="width:75px;"readonly/>
+          <br>
+
         </div>
+
+      </div>
+
+    </div>
+    
+  </section>
+
 </div>   
     
