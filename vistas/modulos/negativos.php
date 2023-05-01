@@ -24,11 +24,11 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarNegativo">
+        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarNegativo">
           
           Agregar Negativo
 
-        </button>
+        </button> -->
 
       </div>
 
