@@ -5,11 +5,7 @@
 ?>
 
 
-    <script type="text/javascript">
-      
-   
-
-    </script>
+    
     
 <div class="content-wrapper">
         
@@ -22,7 +18,10 @@
         <div class="form-group">
             
           <label> Cantidad</label> <input type="text" id="cant" />
-          <label> Num. de Tintas</label> <input type="text" id="NumTintas" />
+
+          <label> Num. de Tintas</label> 
+          <input type="text" id="NumTintas" keyDown="" name="NumTintas" value="" />
+
           <p></p>
 
           <label>Tamaño de etiqueta</label><br>
@@ -189,7 +188,7 @@
                 
       </div>
                   
-      <div class="row" id="tinta-row" style="display: none">        
+      <div class="row" id="tinta-row" style="display: ">        
 
         <label> Tipo de tinta</label><br />
     
@@ -207,7 +206,7 @@
           <input type="text" id="cantidad" style="width:75px;"/>
                 
           Densidad
-          <select id="select-densidad" class="select-densidad">
+          <select id="select-densidad" onkeydown="" class="select-densidad">
             <option value="0">Select</option>
             <option value="1">Baja</option>
             <option value="2">Media</option>
@@ -239,10 +238,15 @@
         
       <br />
     
-      <p>Suma cantidad: <span id="sum-cantidad"></span></p>
+      <p>Suma cantidad: 
+        <!-- <span id="sum-cantidad" value=""></span></p> -->
+        <input type="text" id="sum-cantidad" value=""></p>
       <p>Costo Total Tintas: <span id="sum-CostoTinta"></span></p>
-             
-      <div style="display:none">
+      
+
+    
+      <div id="menu_body">
+      <div style="display:none" id="correcto">
 
         <p><label> PLACA: Costo por pulgada (0.5368)</label>
         <label> B</label> 
@@ -260,7 +264,7 @@
         <p>
             
         <label> NEGATIVO: Costo total negativo</label>
-        <input type="text" id="CostoTotalNegativo" readonly/p>
+        <input type="text" id="CostoTotalNegativo" readonly />
     
         <p>
             
@@ -319,9 +323,54 @@
 
       </div>
 
+      <div id="incorrecto" style="text-align: center; font-size: 35px; display: none; margin-bottom: 50px">
+        <br>
+        <h1>LECTURA INCORRECTA! </h1>
+      </div>
+
+      </div>
+             
     </div>
     
   </section>
+
+  <script type="text/javascript">
+      
+      sumcantidad = document.getElementById('sum-cantidad');
+      sumcantidad.addEventListener('keyDown', function(e){
+
+        let numTintas = document.getElementById('NumTintas').value;
+        let sumcantidad = document.getElementById('sum-cantidad').value;
+        console.log("numTintas", numTintas);
+        let correcto;
+
+        var keycode = e.keyCode || e.which;
+
+        if (keycode == 13) {
+
+          if (numTintas == sumcantidad) {
+
+            
+        
+          document.getElementById('menu_body').style.background = 'lightgreen';
+          document.getElementById('correcto').style.display = "block";
+          document.getElementById('incorrecto').style.display = "none";
+
+          }else {
+
+            documento.getElementById('menu_body').style.background = 'red';
+            document.getElementById('correcto').style.display = "none";
+            document.getElementById('incorrecto').style.display = "block";
+
+          }
+
+          document.getElementById('sum-cantidad').value= '';
+        
+        }
+      
+      });
+
+    </script>
 
 </div>   
     
