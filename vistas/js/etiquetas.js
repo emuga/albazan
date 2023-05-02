@@ -128,7 +128,7 @@ function operar() {
           
         });
   
-        $("#sum-cantidad").text(sumCantidad);
+        $("#sum-cantidad").val(sumCantidad);
         $("#sum-CostoTinta").text(sumCostoTinta);
         
       }

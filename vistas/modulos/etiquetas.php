@@ -4,13 +4,10 @@
 
 ?>
 
-
-
 <script type="text/javascript">
 </script>
 
 <link href="Css/style.css" rel="stylesheet" type="text/css">
-  
 <div class="content-wrapper">
         
   <section class="content">
@@ -92,70 +89,84 @@
                   </tr>
                 
                 </thead>
-                
-                <tbody>
-                
-                  <tr id="valores">
-                
-                      <th scope="row">1</th>
-                
-                      <td>
-                
-                        <div class="col-sm-4" id="nombre"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="finalx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="finaly"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="cabenx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="cabeny"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapIntx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapInty"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="NoGapsx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="NoGapsy"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapExtx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapExty"></div>
-                
-                      </td>
+
+              <tbody>
+
+                <tr id="valores">
+
+                  <th scope="row">1</th>
+
+                    <td>
+
+                      <div class="col-sm-4" id="nombre"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="finalx"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="finaly"></div>
+
+                    </td>
+
+
+                    <td>
+
+                      <div class="col-sm-4" id="cabenx"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="cabeny"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="GapIntx"></div>
+
+                    </td>
+
+
+                    <td>
+
+                      <div class="col-sm-4" id="GapInty"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="NoGapsx"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="NoGapsy"></div>
+
+                    </td>
+
+
+                    <td>
+
+                      <div class="col-sm-4" id="GapExtx"></div>
+
+                    </td>
+
+                    <td>
+
+                      <div class="col-sm-4" id="GapExty"></div>
+
+                    </td>
+
                   </tr>
-                
+
                 </tbody>
                 
               </table>
@@ -168,8 +179,8 @@
         </div>
 
       </div>
-    
-            <div class="box-body" style="display:">
+      
+           <div class="box-body" style="display:">
                     
               CALCULADO<br>
         
@@ -199,6 +210,17 @@
                         <option value="0.03416">Pantone</option>
                         <option value="0.3087">Fluorescente</option>
                         
+                    </select>
+            
+                    <label>(cantidad)</label>
+                    <input type="text" id="cantidad" style="width:75px;"/> Densidad
+                    <select id="select-densidad" class="select-densidad">
+                        
+                        <option value="0">Select</option>
+                        <option value="1">Baja</option>
+                        <option value="2">Media</option>
+                        <option value="3">Alta</option>
+                      
                     </select>
             
                     <label>(cantidad)</label>
