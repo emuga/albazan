@@ -4,16 +4,8 @@
 
 ?>
 
-<script type="text/javascript">
-</script>
-
-<<<<<<< HEAD
     
     
-=======
-<link href="Css/style.css" rel="stylesheet" type="text/css">
-  
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
 <div class="content-wrapper">
         
   <section class="content">
@@ -23,43 +15,37 @@
       <div class="form-row">
                 
         <div class="form-group">
-<<<<<<< HEAD
             
           <label> Cantidad</label> <input type="text" id="cant" />
-
-          <label> Num. de Tintas</label> 
-          <input type="text" id="NumTintas" keyDown="" name="NumTintas" value="" />
-
+          <label> Num. de Tintas</label> <input type="text" id="NumTintas" />
           <p></p>
 
           <label>Tamaño de etiqueta</label><br>
                 
           <select id="etiqueta">
-
+                        
             <option value="" selected="selected">Selecionar etiqueta</option>
-
-            <?php
-
-              $sql = "SELECT id, nombre, finalx, finaly, cabenx, cabeny, GapIntx, GapInty, NoGapsx, NoGapsy, GapExtx, GapExty FROM dados LIMIT 10";
-
-              $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
-
-              while( $rows = mysqli_fetch_assoc($resultset) ) { 
-
-            ?>
-
-            <option value="<?php echo $rows["id"]; ?>"><?php echo $rows["nombre"]; ?></option>
-
-            <?php }	?>
-
-          </select>
+                        
+              <?php
+                            
+                $sql = "SELECT id, nombre, finalx, finaly, cabenx, cabeny, GapIntx, GapInty, NoGapsx, NoGapsy, GapExtx, GapExty FROM dados LIMIT 10";
+                $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
+                while( $rows = mysqli_fetch_assoc($resultset) ) { 
                 
+              ?>
+                        
+              <option value="<?php echo $rows["id"]; ?>"><?php echo $rows["nombre"]; ?></option>
+            
+              <?php }	?>
+        
+          </select>
+                        
         </div>
-
+        
         <div id="display">
-
+        
           <div class="row" id="heading" style="display:"><br>
-
+        
             <h5>Resultados de la Base de Datos.</h5><br>
 
             <table class="table table-bordered table-striped dt-responsive" width="100%">
@@ -160,144 +146,10 @@
 
                     </td>
 
-=======
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
                     
-          <label> Cotizacion</label> <input type="text"  />
-          <label style="margin-left:10px;">Fecha</label>
-          <input type="date" id="start" name="trip-start" value="2023-04-01" min="2023-01-01" max="2050-12-31">
-          <label style="margin-left:10px;"> Tipo de Cambio </label><input style=" width:60px;margin-left:10px;" type="text" id="TipoCambio"/>
-          <label style="margin-left:10px;"> Valor agregado </label><input style=" width:60px;margin-left:10px;" type="text" id="ValorAgregado"/>
-          <br>
 
-          <label style="margin-left:10px;"> Nombre del Cliente </label>
-                    
-          <select  style=" width:300px;height:40px;margin-left:10px;" name="tipoTinta"  class="select-cliente">
-                        
-            <option value="0">Seleccione un cliente</option>
-            <option value="0.02318">01</option>
-            <option value="0.03416">02</option>
-            <option value="0.3087">03</option>
-                        
-          </select>
-          <br><br>
-                    
-          <label> Cantidad</label> <input style=" width:80px;margin-left:10px;" type="text" id="cant" />
-          <label> Num. de Tintas</label> <input style=" width:60px;margin-left:10px;" type="text" id="NumTintas" oninput="sum()" />
-          <label>Tama単o de etiqueta</label>
-                        
-          <select id="etiqueta">
-                        
-            <option value="" selected="selected">Selecionar etiqueta</option>
-                        
-              <?php
-                            
-                $sql = "SELECT id, nombre, finalx, finaly, cabenx, cabeny, GapIntx, GapInty, NoGapsx, NoGapsy, GapExtx, GapExty FROM dados LIMIT 10";
-                $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
-                while( $rows = mysqli_fetch_assoc($resultset) ) { 
-                
-              ?>
-                        
-              <option value="<?php echo $rows["id"]; ?>"><?php echo $rows["nombre"]; ?></option>
-            
-              <?php }	?>
-        
-          </select>
-                        
-        </div>
-        
-        <div id="display">
-        
-          <div class="row" id="heading" style="display:"><br>
-        
-            <h5>Resultados de la Base de Datos.</h5><br>
-            
-              <table class="table table-bordered table-striped dt-responsive" width="100%">
-            
-                <thead class="thead-dark">
-                
-                  <tr>
-                                    
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Finalx</th>
-                    <th scope="col">Finaly</th>
-                    <th scope="col">Cabenx</th>
-                    <th scope="col">Cabeny</th>
-                    <th scope="col">GapIntx</th>
-                    <th scope="col">GapInty</th>
-                    <th scope="col">NumGapsx</th>
-                    <th scope="col">NumGapsy</th>
-                    <th scope="col">GapExtx</th>
-                    <th scope="col">GapExty</th>
-                
                   </tr>
-                
-                </thead>
-                
-                <tbody>
-                
-                  <tr id="valores">
-                
-                      <th scope="row">1</th>
-                
-                      <td>
-                
-                        <div class="col-sm-4" id="nombre"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="finalx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="finaly"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="cabenx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="cabeny"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapIntx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapInty"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="NoGapsx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="NoGapsy"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapExtx"></div>
-                
-                      </td>
-                      <td>
-                
-                        <div class="col-sm-4" id="GapExty"></div>
-                
-                      </td>
-                  </tr>
-                
+
                 </tbody>
                 
               </table>
@@ -334,7 +186,7 @@
 
 =======
       <div class="row" id="tinta-row" style="display: none">        
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
+
         <label> Tipo de tinta</label><br />
           
         <div class="item row-item">
@@ -349,16 +201,10 @@
           </select>
               
           <label>(cantidad)</label>
-<<<<<<< HEAD
           <input type="text" id="cantidad" style="width:75px;"/>
                 
           Densidad
-          <select id="select-densidad" onkeydown="" class="select-densidad">
-=======
-          <input type="text" id="cantidad" style="width:75px;"/> Densidad
           <select id="select-densidad" class="select-densidad">
-                          
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
             <option value="0">Select</option>
             <option value="1">Baja</option>
             <option value="2">Media</option>
@@ -390,21 +236,15 @@
       <div id="content"></div>
               
       <input type="hidden" id="rows-counter" value="0" />
-<<<<<<< HEAD
     
       <button style="float: right" id="add-row-btn">Agregar Tinta</button>
         
       <br />
     
-      <p>Suma cantidad: 
-        <!-- <span id="sum-cantidad" value=""></span></p> -->
-        <input type="text" id="sum-cantidad" value=""></p>
+      <p>Suma cantidad: <span id="sum-cantidad"></span></p>
       <p>Costo Total Tintas: <span id="sum-CostoTinta"></span></p>
-      
-
-    
-      <div id="menu_body">
-      <div style="display:none" id="correcto">
+             
+      <div style="display:none">
 
         <p><label> PLACA: Costo por pulgada (0.5368)</label>
         <label> B</label> 
@@ -422,42 +262,10 @@
         <p>
             
         <label> NEGATIVO: Costo total negativo</label>
-        <input type="text" id="CostoTotalNegativo" readonly />
+        <input type="text" id="CostoTotalNegativo" readonly/p>
     
-=======
-      <br>
-      <button  id="add-row-btn">Agregar Tinta</button>
-      <br><br>
-      <p>Suma cantidad: <span id="sum-cantidad" oninput="sum()"></span></p>
-      <p>Costo Total Tintas: <span id="sum-CostoTinta"></span></p>
-              
-      <div id="CalculosDos" style="display: none">    
-          
         <p>
-                      
-          <label> PLACA: Costo por pulgada (0.5368)</label>
-          <label> B</label> 
-          <input type="text" id="B" onclick="operar()" style="width:75px;" readonly/>
-                  
-          <label> A</label> 
-          <input type="text" id="A" style="width:75px;" readonly/>
-                  
-          <label> Area</label>
-          <input type="text" id="Area" style="width:75px;" readonly/>
-                  
-          <label> Costo placa dolares</label>
-          <input type="text" style="width:75px;" id="CostoPlacaDlls" readonly/>
-                      
-        </p>
-              
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
-        <p>
-                      
-          <label> NEGATIVO: Costo total negativo</label>
-          <input type="text" id="CostoTotalNegativo" readonly>
-              
-        </p>
-                      
+            
         <label> REBOBINADO: Core</label>
         <select name="tipoCore" id="select-tipoCore" onchange="Rebobinado()">
                       
@@ -528,47 +336,5 @@
 
   </section>
 
-<<<<<<< HEAD
-  <script type="text/javascript">
-      
-      sumcantidad = document.getElementById('sum-cantidad');
-      sumcantidad.addEventListener('keyDown', function(e){
-
-        let numTintas = document.getElementById('NumTintas').value;
-        let sumcantidad = document.getElementById('sum-cantidad').value;
-        console.log("numTintas", numTintas);
-        let correcto;
-
-        var keycode = e.keyCode || e.which;
-
-        if (keycode == 13) {
-
-          if (numTintas == sumcantidad) {
-
-            
-        
-          document.getElementById('menu_body').style.background = 'lightgreen';
-          document.getElementById('correcto').style.display = "block";
-          document.getElementById('incorrecto').style.display = "none";
-
-          }else {
-
-            documento.getElementById('menu_body').style.background = 'red';
-            document.getElementById('correcto').style.display = "none";
-            document.getElementById('incorrecto').style.display = "block";
-
-          }
-
-          document.getElementById('sum-cantidad').value= '';
-        
-        }
-      
-      });
-
-    </script>
-
 </div>   
-=======
-</div>  
->>>>>>> a236702fe96f686419dee94050ec1b5da288ade4
     
