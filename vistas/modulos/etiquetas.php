@@ -16,7 +16,7 @@
                 
         <div class="form-group">
             
-          <label> Cantidad</label> <input type="text" id="cant" />
+          <label> Cantidad ELIAS MUGA ENRIQUEZ</label> <input type="text" id="cant" />
           <label> Num. de Tintas</label> <input type="text" id="NumTintas" />
           <p></p>
 
