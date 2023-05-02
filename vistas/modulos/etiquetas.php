@@ -181,10 +181,6 @@
                       
       </div>
                   
-<<<<<<< HEAD
-      <div class="row" id="tinta-row" style="display: ">        
-
-=======
       <div class="row" id="tinta-row" style="display: none">        
 
         <label> Tipo de tinta</label><br />
@@ -323,11 +319,6 @@
                       
         </div>
                   
-      </div>
-
-      <div id="incorrecto" style="text-align: center; font-size: 35px; display: none; margin-bottom: 50px">
-        <br>
-        <h1>LECTURA INCORRECTA! </h1>
       </div>
 
       </div>
