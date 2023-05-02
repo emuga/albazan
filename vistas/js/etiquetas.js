@@ -124,6 +124,7 @@ function operar() {
   
           sumCantidad += thisCantidad;
           sumCostoTinta += thisCostoTinta;
+          Ocultar();
           
         });
   
@@ -355,5 +356,16 @@ function operar() {
           TotalPrecioPublico = CostoTotalPesos * ValorAgregado;
           document.getElementById("TotalPrecioPublico").value = TotalPrecioPublico;
       }
+       
+      function Ocultar(){
+        const numTintas = parseInt(document.getElementById("NumTintas").value);
+        const sumCantidad = parseInt(document.getElementById("sum-cantidad").textContent);
+        const divCalculosDos = document.getElementById("CalculosDos");
         
+            if (numTintas === sumCantidad) {
+            divCalculosDos.style.display = "block";
+          } else {
+            divCalculosDos.style.display = "none";
+          }
+    }
   
