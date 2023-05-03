@@ -362,10 +362,10 @@ function operar() {
         const sumCantidad = parseInt(document.getElementById("sum-cantidad").textContent);
         const divCalculosDos = document.getElementById("CalculosDos");
         
-            if (numTintas === sumCantidad) {
-            divCalculosDos.style.display = "block";
-          } else {
-            divCalculosDos.style.display = "none";
-          }
+        if (numTintas === sumCantidad) {
+          divCalculosDos.style.display = "block";
+        } else {
+          divCalculosDos.style.display = "none";
+        }
     }
   
