@@ -43,8 +43,7 @@
            <th style="width:10px">#</th>
            <th>Nombre empresa</th>
            <th>RFC</th>
-           <th>Nombre</th>
-           <th>Apellido</th>
+           <th>Razon Social</th>
            <th>Correo</th>
            <th>Tel&eacute;fono</th>
            <th>Calle</th>
@@ -77,8 +76,7 @@
                       <td>'.($key+1).'</td>
                       <td>'.$value["nombreEmpresa"].'</td>
                       <td>'.$value["rfc"].'</td>
-                      <td>'.$value["nombre"].'</td>
-                      <td>'.$value["apellido"].'</td>
+                      <td>'.$value["razonSocial"].'</td>
                       <td>'.$value["correo"].'</td>
                       <td>'.$value["telefono"].'</td>
                       <td>'.$value["calle"].'</td>
@@ -183,33 +181,17 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
-            <!-- ENTRADA PARA NOMBRE -->
+            <!-- ENTRADA PARA RAZON SOCIAL -->
 
              <div class="form-group">
 
-                <label for="">Nombres</label>
+                <label for="">Razon Social</label>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoNombre" name="nuevoNombre" placeholder="Ingresar nombre" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA APELLIDO -->
-
-             <div class="form-group">
-
-                <label for="">Apellidos</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="nuevoApellido" name="nuevoApellido" placeholder="Ingresar apellido" required>
+                <input type="text" class="form-control input-lg" id="nuevoRazonSocial" name="nuevoRazonSocial" placeholder="Ingresar razon social" required>
 
               </div>
 
@@ -439,33 +421,17 @@ MODAL EDITAR CLIENTE
 
             </div>
 
-            <!-- ENTRADA PARA NOMBRE -->
+            <!-- ENTRADA PARA RAZON SOCIAL -->
 
              <div class="form-group">
 
-                <label for="">Nombres</label>
+                <label for="">Razon Social</label>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarNombre" name="editarNombre" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA APELLIDO -->
-
-             <div class="form-group">
-
-                <label for="">Apellidos</label>
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
-
-                <input type="text" class="form-control input-lg" id="editarApellido" name="editarApellido" required>
+                <input type="text" class="form-control input-lg" id="editarRazonSocial" name="editarRazonSocial" required>
 
               </div>
 

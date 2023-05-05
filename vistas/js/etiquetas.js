@@ -112,7 +112,6 @@ function operar() {
           CostosFinales();
   
         }
-  
    
       function sum() {
           

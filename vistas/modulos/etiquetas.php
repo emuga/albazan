@@ -4,9 +4,6 @@
 
 ?>
 
-<script type="text/javascript">
-</script>
-
 <link href="Css/style.css" rel="stylesheet" type="text/css">
 <div class="content-wrapper">
         
@@ -25,14 +22,27 @@
           <label style="margin-left:10px;"> Valor agregado </label><input style=" width:60px;margin-left:10px;" type="text" id="ValorAgregado"/>
           <br>
 
+          CLIENTES
           <label style="margin-left:10px;"> Nombre del Cliente </label>
                     
           <select  style=" width:300px;height:40px;margin-left:10px;" name="tipoTinta"  class="select-cliente">
-                        
+                    
             <option value="0">Seleccione un cliente</option>
-            <option value="0.02318">01</option>
-            <option value="0.03416">02</option>
-            <option value="0.3087">03</option>
+
+            <?php
+
+              $item = null;
+              $valor= null;
+
+              $clientes = ControladorClientes::ctrMostrarClientes($item, $valor);
+
+              foreach($clientes as $key => $value){
+
+                echo '<option value="'.$value["id"].'">'.$value["nombreEmpresa"].'</option>';
+
+              }
+
+            ?>
                         
           </select>
           <br><br>

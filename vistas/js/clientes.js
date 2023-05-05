@@ -23,8 +23,7 @@ $(document).on("click", ".btnEditarCliente", function(){
 			$("#idCliente").val(respuesta["id"]);
 			$("#editarEmpresa").val(respuesta["nombreEmpresa"]);
 			$("#editarRfc").val(respuesta["rfc"]);
-			$("#editarNombre").val(respuesta["nombre"]);
-			$("#editarApellido").val(respuesta["apellido"]);
+			$("#editarRazonSocial").val(respuesta["razonSocial"]);
 			$("#editarCorreo").val(respuesta["correo"]);
 			$("#editarTelefono").val(respuesta["telefono"]);
 			$("#editarCalle").val(respuesta["calle"]);
@@ -49,8 +48,7 @@ $(document).on("click", ".btnEliminarCliente", function(){
 	var idCliente = $(this).attr("idCliente");
 	var empresa = $(this).attr("nombreEmpresa");
 	var rfc = $(this).attr("rfc");
-	var nombre = $(this).attr("nombre");
-	var apellido = $(this).attr("apellido");
+	var razonSocial = $(this).attr("razonSocial");
 	var correo = $(this).attr("correo");
 	var telefono = $(this).attr("telefono");
 	var calle = $(this).attr("calle");

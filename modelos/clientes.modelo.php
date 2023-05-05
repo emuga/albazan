@@ -46,12 +46,14 @@ class ModeloClientes{
 	=============================================*/
 	static public function mdlAgregarCliente($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (nombreEmpresa, rfc, nombre, apellido, correo, telefono, calle, colonia, codigoPostal, ciudad, estado, pais) VALUES (:nombreEmpresa, :rfc, :nombre, :apellido, :correo, :telefono, :calle, :colonia, :codigoPostal, :ciudad, :estado, :pais)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (nombreEmpresa, rfc, razonSocial, 
+		correo, telefono, calle, colonia, codigoPostal, ciudad, estado, pais) VALUES 
+		(:nombreEmpresa, :rfc, :razonSocial, :correo, :telefono, :calle, :colonia, 
+		:codigoPostal, :ciudad, :estado, :pais)");
 
 		$stmt->bindParam(":nombreEmpresa", $datos["nombreEmpresa"], PDO::PARAM_STR);
 		$stmt->bindParam(":rfc", $datos["rfc"], PDO::PARAM_STR);
-		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
-		$stmt->bindParam(":apellido", $datos["apellido"], PDO::PARAM_STR);
+		$stmt->bindParam(":razonSocial", $datos["razonSocial"], PDO::PARAM_STR);
 		$stmt->bindParam(":correo", $datos["correo"], PDO::PARAM_STR);
 		$stmt->bindParam(":telefono", $datos["telefono"], PDO::PARAM_STR);
 		$stmt->bindParam(":calle", $datos["calle"], PDO::PARAM_STR);
@@ -86,13 +88,15 @@ class ModeloClientes{
 
 	static public function mdlEditarCliente($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombreEmpresa=:nombreEmpresa, rfc=:rfc, nombre=:nombre, apellido=:apellido, correo=:correo, telefono=:telefono, calle=:calle, colonia=:colonia, codigoPostal=:codigoPostal, ciudad=:ciudad, estado=:estado, pais=:pais WHERE id=:id");
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombreEmpresa=:nombreEmpresa, 
+		rfc=:rfc, razonSocial=:razonSocial, correo=:correo, telefono=:telefono, calle=:calle, 
+		colonia=:colonia, codigoPostal=:codigoPostal, ciudad=:ciudad, estado=:estado, 
+		pais=:pais WHERE id=:id");
 
 		$stmt->bindParam(":id", $datos["id"], PDO::PARAM_STR);
 		$stmt->bindParam(":nombreEmpresa", $datos["nombreEmpresa"], PDO::PARAM_STR);
 		$stmt->bindParam(":rfc", $datos["rfc"], PDO::PARAM_STR);
-		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
-		$stmt->bindParam(":apellido", $datos["apellido"], PDO::PARAM_STR);
+		$stmt->bindParam(":razonSocial", $datos["razonSocial"], PDO::PARAM_STR);
 		$stmt->bindParam(":correo", $datos["correo"], PDO::PARAM_STR);
 		$stmt->bindParam(":telefono", $datos["telefono"], PDO::PARAM_INT);
 		$stmt->bindParam(":calle", $datos["calle"], PDO::PARAM_STR);

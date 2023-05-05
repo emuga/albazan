@@ -29,8 +29,7 @@ class ControladorClientes{
 
 			if (preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoNombreEmpresa"]) &&
 				preg_match('/^[a-zA-Z0-9-]+$/', $_POST["nuevoRfc"]) &&
-				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoNombre"]) &&
-				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoApellido"]) &&
+				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoRazonSocial"]) &&
 				preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["nuevoCorreo"]) &&
 				preg_match('/^[()\-0-9 ]+$/', $_POST["nuevoTelefono"]) &&
 				preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevoCalle"]) &&
@@ -44,8 +43,7 @@ class ControladorClientes{
 
 				$datos = array('nombreEmpresa' => $_POST['nuevoNombreEmpresa'],
 								'rfc' => $_POST['nuevoRfc'],
-								'nombre' => $_POST['nuevoNombre'],
-								'apellido' => $_POST['nuevoApellido'],
+								'razonSocial' => $_POST['nuevoRazonSocial'],
 								'correo' => $_POST['nuevoCorreo'],
 								'telefono' => $_POST['nuevoTelefono'],
 								'calle' => $_POST['nuevoCalle'],
@@ -126,8 +124,7 @@ class ControladorClientes{
 
 			if (preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarEmpresa"]) &&
 				preg_match('/^[a-zA-Z0-9- ]+$/', $_POST["editarRfc"]) &&
-				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarNombre"]) &&
-				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarApellido"]) &&
+				preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarRazonSocial"]) &&
 				preg_match('/^[a-zA-Z0-9@.]+$/', $_POST["editarCorreo"]) &&
 				preg_match('/^[0-9]+$/', $_POST["editarTelefono"]) &&
 				preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarCalle"]) &&
@@ -142,8 +139,7 @@ class ControladorClientes{
 			$datos = array('id' => $_POST['idCliente'],
 										'nombreEmpresa' => $_POST['editarEmpresa'],
 										'rfc' => $_POST['editarRfc'],
-										'nombre' => $_POST['editarNombre'],
-										'apellido' => $_POST['editarApellido'],
+										'razonSocial' => $_POST['editarRazonSocial'],
 										'correo' => $_POST['editarCorreo'],
 										'telefono' => $_POST['editarTelefono'],
 										'calle' => $_POST['editarCalle'],
